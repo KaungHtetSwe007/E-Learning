@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.card {
+  -webkit-transition: -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: transform .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+.card:hover {
+  z-index: 99;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale3d(1.2, 1.2, 1) translateZ(0) perspective(500px);
+  transform: scale3d(1.2, 1.2, 1) translateZ(0) perspective(500px);
+  -webkit-transition: -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: transform .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  position: relative;
+  z-index: 10;
+}
+.card:after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  bottom: -7px;
+  left: -7px;
+  right: -7px;
+  border: 0 solid #fff;
+  border-radius: 8px;
+  opacity: 0;
+  -webkit-transition: border .25s cubic-bezier(.33, .04, .63, .93);
+  transition: border .25s cubic-bezier(.33, .04, .63, .93);
+  pointer-events: none;
+  z-index: 1;
+}
+.card:hover:after {
+  content: "";
+  top: -7px;
+  right: -7px;
+  bottom: -7px;
+  left: -7px;
+  border-width: 8px;
+  border-radius: 8px;
+  opacity: .99;
+  -webkit-transition: border-width .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93), top .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93), right .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93), left .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93);
+  transition: border-width .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93), top .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93), right .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93), left .25s cubic-bezier(.33, .04, .63, .93), opacity .25s cubic-bezier(.33, .04, .63, .93);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+}
+.card .img {
+  height: 200px;
+  width: 100%;
+}
+.card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 4px;
+}
+.card .top-text {
+  padding: 10px 10px 10px 10px;
+}
+.card .title h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.card p {
+  font-size: 11px !important;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+.card p span::before {
+  content: "\f192";
+  font-family: "Font Awesome 5 Pro";
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  margin: 3px 3px 0;
+  background: rgb(4 123 245 / 44%);
+  color: #047cd2;
+  text-align: center;
+}
+.watch {
+  margin-top: 5px;
+}
+.watch i {
+  font-size: 10px;
+}
+.watch .btn-w {
+  font-size: 13px;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #047cd2;
+  padding: 3px 5px 3px 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.share i {
+  font-size: 15px;
+}
+.card .bottom-text:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card .bottom-text {
+  display: none;
+}
+.card .bottom-text {
+  display: block;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  right: -1px;
+  padding: 10px 1px 5px 4px;
+  text-align: left;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  -webkit-transform: scale3d(.01, .01, 0) translateZ(0) perspective(500px);
+  transform: scale3d(.01, .01, 0) translateZ(0) perspective(500px);
+  opacity: 0;
+  border-radius: 50px;
+  -webkit-transition: opacity .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), background-color .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), border-radius .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s ease-in, -webkit-filter .25s ease-in;
+  transition: opacity .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), background-color .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), border-radius .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s ease-in, -webkit-filter .25s ease-in;
+  transition: opacity .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), transform .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), filter .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), background-color .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), border-radius .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93);
+  transition: opacity .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), transform .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), filter .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), background-color .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), border-radius .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s ease-in, -webkit-filter .25s ease-in;
+}
+.card:hover .bottom-text {
+  background-color: #fff;
+  -webkit-filter: inherit;
+  filter: inherit;
+  -webkit-transform: scaleX(1) translateZ(0) perspective(0);
+  transform: scaleX(1) translateZ(0) perspective(0);
+  opacity: .99;
+  z-index: 2;
+  border-radius: 0;
+  -webkit-transition: opacity .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), background-color .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), border-radius .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s ease-in, -webkit-filter .25s ease-in;
+  transition: opacity .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), bottom .25s cubic-bezier(.33, .04, .63, .93), background-color .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), border-radius .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s ease-in, -webkit-filter .25s ease-in;
+  transition: opacity .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), transform .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), filter .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), background-color .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), border-radius .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93);
+  transition: opacity .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), transform .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), filter .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), background-color .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), border-radius .25s ease-in, bottom .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s ease-in, -webkit-filter .25s ease-in;
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+}
+/*.card:hover .top-text {
+  opacity: 0;
+  display: none;
+}*/
+.card .bottom-text .btn {
+  margin: 10px 0;
+  text-align: left;
+}
+.card .bottom-text .btn a {
+  text-decoration: none;
+  background: #e74c3c;
+  color: #f2f2f2;
+  padding: 5px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  transition: 0.2s;
+}
+.card .bottom-text .btn a:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 978px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .card {
+    max-width: 700px;
+    margin: 20px 0;
+  }
+}
+.container{
+  grid-gap: 90px 65px;
+  padding: 60px 20px;
+  margin-left: 30px;
+}
+@media only screen and (max-width: 600px) {
+
+.card:hover {
+  z-index: 99;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale3d(1, 1, 1) translateZ(0) perspective(500px);
+  transform: scale3d(1, 1, 1) translateZ(0) perspective(500px);
+  -webkit-transition: -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: transform .25s cubic-bezier(.33, .04, .63, .93);
+  transition: transform .25s cubic-bezier(.33, .04, .63, .93), -webkit-transform .25s cubic-bezier(.33, .04, .63, .93);
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+  position: relative;
+  z-index: 10;
+}
+}

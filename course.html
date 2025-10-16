@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="js/home.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <header>
+<nav>
+  <div class="logo">MCY.</div>
+  <div class="toggle_menu" id="toggle_menu">
+    <i class='bx bx-menu'></i>
+  </div>
+  <ul class="nav_list" id="nav_menu">
+    <div class="close_menu" id="close_menu"><i class='bx bx-x'></i></div>
+     <!-- dropdown start -->
+    <li class="hideOnMobile dropdown"><a href="#" class="nav_link dropdown_link" id="cos">Courses<i class='bx bxs-chevron-down dropdown_icon'></i></a>
+      <div class="dropdown-content">
+    <a href="course.html">PHP</a>
+    <a href="#">JavaScript</a>
+    <a href="#">HTML & CSS</a>
+    <a href="#">Logic</a>
+    <a href="#">C++</a>
+    <a href="#">Python</a>
+    <a href="#">C#</a>
+    <a href="#">Note.JS</a>
+  </div>
+
+    </li>
+    <!-- dropdown end -->
+    <li class="hideOnMobile">
+    <div class="search">
+    <input type="search" name="search" required>
+    <i class="fa fa-search"></i>
+    <a href="javascript:void(0)" id="clear-btn" class="clear">Clear</a>
+</div>
+    </li>
+    <li class="hideOnMobile"><a href="home.html" class="nav_link">Home</a></li>
+
+    <li class="hideOnMobile"><a href="contact.html" class="nav_link">Contact Us</a></li>
+    <li class="hideOnMobile"><a href="#" class="nav_link">About Us</a></li>
+    <li class="hideOnMobile"> <a href="Login_signup.html"class="nav_link" onclick="openForm()">Sign In/Up</a></li>
+    <li class="hideOnMobile">
+        <label class="lan_label">Language</label>
+        <select id="language-select">
+          <option value="en" selected>🇺🇸</option>
+          <option value="my"> 🇲🇲</option> 
+      </select>
+  </li>
+
+  <li class="hideOnMobile"><a href="#" class="nav_link">Admin</a></li>
+
+  </ul>
+  <ul>
+</nav>
+</header>
+    <center>
+    <div class="bann">
+        <div class="column1">
+            <h1 style="color: #3586ff;">PHP Course</h1>
+            <p>Contact us for PHP-Development</p>
+            <button>JOIN</button>
+        </div>
+        <div class="column2">
+            <img src="img/mp4.svg" alt="" width="500px">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="imageBx">
+                <img src="img/p12.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Level-1</h3>
+                    <p>Level for Beginners.</p>
+
+                    <button class="LM_button">
+                     <a href="#" class="lmore">Learn More</a>
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+                  </svg>
+                </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imageBx">
+                <img src="img/p13.jpg" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Level-2</h3>
+                    <p>Level for Intermediate.</p>
+                   
+                <button class="LM_button">
+                     <a href="#" class="lmore">Learn More</a>
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+                  </svg>
+                </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imageBx">
+                <img src="img/p14.jpg" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h3>Level-3</h3>
+                    <p>Level for Advance.</p>
+
+                    <button class="LM_button">
+                     <a href="#" class="lmore">Learn More</a>
+                    <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd"></path>
+                  </svg>
+                </button>
+
+                </div>
+            </div>
+        </div>
+    </div></center>
+
+    <div class="foot">
+    <!-- footer start -->
+<footer>
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social_icon">
+    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="call-outline"></ion-icon></a></li>
+  </ul>
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <p>MCY. Online Learning | All Rights Reversed</p>
+</footer></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- For dropdown JS start-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bxslider/dist/jquery.bxslider.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Toggle dropdown when clicking on the dropdown icon
+    $('.dropdown_icon').click(function(){
+      $('.dropdown-content').toggle();
+    });
+
+    // Close dropdown when clicking outside of it
+    $(document).click(function(event) {
+      var $target = $(event.target);
+      if (!$target.closest('.dropdown').length) {
+        $('.dropdown-content').hide();
+      }
+    });
+  });
+</script>
+<!-- For dropdown JS end-->
+</body>
+</html>

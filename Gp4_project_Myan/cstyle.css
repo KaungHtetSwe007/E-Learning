@@ -1,0 +1,66 @@
+#form{
+	margin-left: 100px;
+}
+
+.box1 h3{
+	float: left;
+}
+
+.box1 button{
+	float: right;
+	margin-right: 15%;
+	margin-top: 0px;
+}
+.modal-body input{
+	height: 50px;
+	width: 150px;
+}
+.container{
+	margin-top: 50px;
+	margin-left: 30%;
+}
+.i1{
+	margin-left: 20%;
+}
+.c1{
+	display: flex;
+	margin-left: 10%;
+	margin-top: 70px;
+	padding-top: 0px;
+}
+.cc1 img{
+	height: 130px;
+	width: 130px;
+	margin-left: 30px;
+}
+.f3{
+	border-radius: 30px;
+	border-color: #77bbff;
+	margin-left: 20px;
+	margin-top: 23px;
+	font-size: 18px;
+	text-align: left;
+	padding: 2%;
+}
+.p3{
+	margin-top: 10px;
+	margin-left: 70px;
+	font-size: 25px;
+	color: #3586ff;
+	text-decoration: 1px solid black;
+}
+.f3 a{
+	text-decoration: none;
+	color:white ;
+}
+.f3 button{
+	background-color:#3586ff;
+	border-radius: 5px;
+	color: white;
+	width: 80px;
+	height: 40px;
+	border:none;
+	}
+
+
+

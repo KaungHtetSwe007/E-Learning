@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Page Title</title> 
+  <!-- search link  start-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- search link  start-->
+  <!-- instructor start -->
+  <link rel="stylesheet"  href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="css/instructor.css">
+  <!-- instructor end -->
+  <!-- essential topics start -->
+    <link rel="stylesheet" type="text/css" href="css/tstyle.css">
+  <!-- essential topics end -->
+
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <script src="js/home.js">  
+</script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- popular courses css link -->
+<link rel="stylesheet" type="text/css" href="css/instyle.css">
+<style type="text/css">
+  .logo img{
+    width: 100px;
+    height: 110px;
+    margin-left: -5px;
+    margin-top: 10px;
+    border-radius:0 0 50px 50px;
+  }
+ .hideOnMobile{
+  margin: 1rem 4rem;
+  padding: 1rem 0rem;
+  font-size: 17px;
+  padding-top: 33px;
+  margin-left: 20px;
+ 
+}
+  .input-style{
+ padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+  width: 50%;
+}
+.input-style:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 16px 32px;
+  border: none;
+  background-color: #2196F3;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.animated-button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-button:hover {
+  color: #2196F3;
+  background-color: #fff;
+  box-shadow: 0 0 20px hsla(263, 77%, 31%, 0);
+}
+
+.animated-button:active {
+  scale: 0.9;
+}
+
+.animated-button:hover:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 1;
+}
+
+.sub_title>#mcy{
+  font-weight: 100;
+  font-size: 18px;
+  color: #3586ff;
+}
+.sub_title>#mcyl{
+   font-weight: 200;
+  font-size: 20px;
+  color: #000;
+}
+</style>
+</head>
+<body>
+
+  <header>
+<nav>
+  <div class="logo"><img src="img/6.png"></div>
+  <div class="toggle_menu" id="toggle_menu">
+    <i class='bx bx-menu'></i>
+  </div>
+  <ul class="nav_list" id="nav_menu">
+    <div class="close_menu" id="close_menu"><i class='bx bx-x'></i></div>
+     <!-- dropdown start -->
+    <li class="hideOnMobile dropdown"><a href="#" class="nav_link dropdown_link" id="cos">Courses<i class='bx bxs-chevron-down dropdown_icon'></i></a>
+      <div class="dropdown-content">
+    <a href="phpcourse.php">PHP</a>
+    <a href="javascript.php">JavaScript</a>
+    <a href="htmlcss.php">HTML & CSS</a>
+    <a href="#">Logic</a>
+    <a href="#">C++</a>
+    <a href="#">Python</a>
+    <a href="#">C#</a>
+    <a href="#">Note.JS</a>
+  </div>
+
+    </li>
+    <!-- dropdown end -->
+    
+    <li class="hideOnMobile"><a href="home.php" class="nav_link">Home</a></li>
+
+    <li class="hideOnMobile"><a href="usercontact.php" class="nav_link">ContactUs</a></li>
+    <li class="hideOnMobile"><a href="aboutus.php" class="nav_link">AboutUs</a></li>
+    <li class="hideOnMobile"> <a href="commentmain.php"class="nav_link">Reviews</a></li>
+    <li class="hideOnMobile"> <a href="mhome.php"class="nav_link">Language(MM)</a></li>
+        
+  <li class="hideOnMobile"><a href="amin.php" class="nav_link">Admin</a></li>
+
+  </ul>
+  <ul>
+</nav>
+</header>
+<!-- header end -->
+
+<!-- main content -->
+<div class="main_page">
+  <div>
+    <p class="slogan" id="textContent">Million Chances For Youths</p>
+    <p class="sub_title" id="tc1">We’re a nonprofit with the mission to provide a free,<br>world-class education for anyone, anywhere.</p><br> 
+
+    <div class="for_mark"><img src="img/mk.png" width="20px" height="20px" class="mark"><p>Explore to achieve your next level of success</p></div> 
+    <div class="for_mark"><img src="img/mk.png" width="20px" height="20px" class="mark"><p>Ignite your passion for programming</p></div> 
+    <div class="for_mark"><img src="img/mk.png" width="20px" height="20px" class="mark"><p>Empower your programming journey</p></div> 
+    
+<br><br>
+    <button type="submit" class="sub_btn" id="btn" > <a href="Login_signup.php" onclick="openForm()">Sign In,Up</a></button>
+  </div>
+
+  <div class="image"><img src="img/mp3.svg" width="50%" height="400px"></div>
+</div>
+
+    <div id="search">
+      <form action="search.php" method="post">
+        <input type="text" name="st" class="input-style" placeholder="Enter file name you want to search">
+        <button class="animated-button" type="submit" name="search"><span>Search</span></button>
+      </form>
+    </div>
+<hr>
+<br>
+<!-- instructor start -->
+<h2 class="instr_topic">Instructors<span> Profiles</span></h2>
+<div class="swiper slide-container">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="https://yt3.googleusercontent.com/nhDLqeIgXMJBDIrX2bXavvHoWX0tsslDEh7k2xZ1P0W8b_CMRVigp2kxJubYEVwBcBlogZDe=s176-c-k-c0x00ffffff-no-rj" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>Apna College</h2>
+            <p class="description">Ex-Microsoft Software Engineer</p>
+            <button class="button"><a href="1.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="data:image/jpeg;base64,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" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>Mosh</h2>
+            <p class="description">C++ Teacher</p>
+             <button class="button"><a href="2.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="https://avatars.githubusercontent.com/u/70604577?v=4" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>SuperSimpleDev</h2>
+            <p class="description">Javascript Teacher</p>
+             <button class="button"><a href="3.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="https://yt3.googleusercontent.com/BUYA5zaqDRFvaG94XtFr0rqWAN8je0nynBbuIITf9dk_Y8kT7UMEWLyzr9OJ4mQsMPExXo8DfHw=s176-c-k-c0x00ffffff-no-rj" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>SimonThuta</h2>
+            <p class="description">Python Teacher</p>
+            <button class="button"><a href="4.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="https://yt3.googleusercontent.com/qfA_u7fOM5hjK0559x9sWOYbAY2PBGplzmLXMsc2uS1upElpYX_aXlOwZao4ztReTJlisLhpZg=s176-c-k-c0x00ffffff-no-rj" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>PL Myanmar</h2>
+            <p class="description">Java Teacher</p>
+             <button class="button"><a href="5.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="https://yt3.googleusercontent.com/ytc/AIf8zZS0AozSPXKprRy1mF7t6bk579jwvGRe2BH4Wezm0A=s176-c-k-c0x00ffffff-no-rj" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>Dani Krossing</h2>
+            <p class="description">PHP Teacher</p>
+             <button class="button"><a href="6.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTNiWLD2-Qw1eWFmRJkGBzfI-8oFNmYk5tBnpNurQ=s176-c-k-c0x00ffffff-no-rj" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>Harry</h2>
+            <p class="description">Java Teacher</p>
+             <button class="button"><a href="7.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="https://yt3.googleusercontent.com/ytc/AIf8zZTkcyoXytE4Fyua9IUiqgdkLYpJAMhr9wCt2A3TZQ=s176-c-k-c0x00ffffff-no-rj" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>Daniel Liang</h2>
+            <p class="description">Java Teacher</p>
+             <button class="button"><a href="8.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+            <div class="card-image">
+              <img src="https://yt3.googleusercontent.com/ytc/AIf8zZQJUhLAbfTEjP6QrFxNozUziJRiZL_v30aK2Xg1=s176-c-k-c0x00ffffff-no-rj" alt="" class="card-img">
+            </div>
+          </div>
+          <div class="card-content">
+            <h2>ProgrammingKnowledge</h2>
+            <p class="description">Python Teacher</p>
+             <button class="button"><a href="9.php" style="text-decoration: none; color: white;">View More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next  swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+  </div>
+<!-- instructor start -->
+<!-- main courses start -->
+  <h2 class="main_topic">Main <span>Courses</span> </h2>
+<div class="popular_topics">
+  <div class="first_row">
+    <div class="first_rowbox"><a href="phpcourse.php">PHP</a></div>
+    <div class="first_rowbox"><a href="javascript.php">JavaScript</a></div>
+    <div class="first_rowbox"><a href="htmlcss.php">HTML&CSS</a></div>
+    <div class="first_rowbox"><a href="">Logic</a></div>
+  </div>
+  <div class="second_row">
+    <div class="second_rowbox"><a href="">C++</a></div>
+    <div class="second_rowbox"><a href="">Python</a></div>
+    <div class="second_rowbox"><a href="">C#</a></div>
+    <div class="second_rowbox"><a href="">Note.JS</a></div>
+  </div>
+</div>
+<!-- main courses end -->
+
+<!-- popular course start -->
+<div class="container">
+
+    <h1 class="heading">Popular<span> Courses</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/web-designing.jpg" alt="">
+            <h3>PHP  </h3>
+            <p>Hypertext Preprocessor (PHP) is an open-source, free server-side scripting language widely used in web development.</p>
+            <a href="phpcourse.php" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="img/web-designing.jpg" alt="">
+            <h3>Javascript  </h3>
+            <p>JavaScript is a scripting language that enables you to create dynamically updating content.</p>
+            <a href="javascript.php" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="img/web-designing.jpg" alt="">
+            <h3>HTML & CSS  </h3>
+            <p>HTML is the standard markup language for creating Web pages· CSS is used to format the layout of a webpage.</p>
+            <a href="htmlcss.php" class="btn">read more</a>
+        </div>
+
+       
+
+    </div>
+
+</div>
+
+<!-- popular cours end -->
+<!-- essential topics start -->
+<h1>Essential  <span>Skills</span></h1><br>
+  <div class="process-wrapper">
+    <div id="progress-bar-container">
+      <ul>
+        <li class="step step01 active">
+          <div class="step-inner">Coding</div>
+        </li>
+
+        <li class="step step02 ">
+          <div class="step-inner">Relation</div>
+        </li>
+
+        <li class="step step03 ">
+          <div class="step-inner">Analysis</div>
+        </li>
+
+        <li class="step step04 ">
+          <div class="step-inner">Challenges</div>
+        </li>
+
+        <li class="step step05 ">
+          <div class="step-inner">Adaptive</div>
+        </li>
+      </ul>
+      <div id="line">
+        <div id="line-process"></div>
+      </div>
+    </div>
+    <div id="progress-content-section">
+      <div class="section-content discovery active">
+        <h2>MOST-WANTED TECHNICAL SKILLS & CODING LANGUAGES</h2>
+        <p>
+          Obviously, you won't get far as a programmer analyst if you don't have razor-sharp IT skills and mastery of today's most popular coding languages. A quality programming diploma will focus on the skillset you need to get your foot in the door and land your first position after college. The curriculum should be tailored to current industry needs—the technical skills companies want most in new hires right now.Hundreds of job postings across multiple sites show employers are looking for programmer analysts who can develop applications within the net framework.
+        </p>
+      </div>
+      <div class="section-content strategy">
+        <h2>COMMUNICATION & TEAMWORK</h2>
+        <p>
+          Programmer analysts don't work alone, producing and testing code in complete isolation. A key part of this job is figuring out the unique business needs of the organization you're working with, and then customizing systems and applications to fit those needs.This involves communicating with other departments and team members, presenting your recommendations, and in many cases, training users on new programs.You may also be responsible for helping users with any technical issues by answering questions, dealing with bugs, and following up on requests.
+        </p>
+      </div>
+      <div class="section-content creative">
+        <h2> ANALYSIS & PROBLEM SOLVING</h2>
+        <p>
+          Essentially, this is what you'll be doing all day at work. Programmer analysts assess client needs, research possible technical solutions, and then design and develop those systems and applications—solving problems that come up along the way.Quality assurance is an important part of this job as well. You'll be expected to thoroughly test any software you develop or modify, and take care of any bugs, before implementation.
+        </p>
+      </div>
+      <div class="section-content production">
+        <h2>UNDERSTANDING BUSINESS CHALLENGES AND GOALS</h2>
+        <p>
+          Programmer analysts work with IT services and consulting firms as well as large companies across various industries—including financial services, healthcare, education, media, and government. Their main goal is to help businesses and organizations run better by optimizing and customizing their computer systems and software.It's very helpful when programmer analysts understand the "language" of business—so when clients talk about their communication challenges, operational structure, and growth goals, the analyst can keep up, "talk the talk," and really understand those needs.
+        </p>
+      </div>
+      <div class="section-content analysis">
+        <h2>BEING ADAPTIVE AND A QUICK LEARNER</h2>
+        <p>
+          If there's one thing you can count on in IT, it's change. Just think about how far computer systems have come in the last 20 years...and what this field might look like, just a decade or two from now.Organizations are facing all kinds of system and software challenges; problems you'll be expected to adapt to and solve throughout your career.There are so many exciting areas to focus on for programmer analysts who can adapt quickly and are open to learning new skills. Businesses and organizations need your expertise to navigate the fast-changing, increasingly complex world of IT.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- essential topics end -->
+<!-- main content end -->
+
+<!-- footer start -->
+<footer>
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social_icon">
+    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href="#"><ion-icon name="call-outline"></ion-icon></a></li>
+  </ul>
+  <ul class="menu">
+    <li><a href="home.php">Home</a></li>
+    <li><a href="usercontactus.php">Contactus</a></li>
+    <li><a href="aboutus.php">Aboutus</a></li>
+    <li><a href="commentmain.php">Review</a></li>
+    <li><a href="admin.php">Admin</a></li>
+    
+  </ul>
+  <p>MCY. Online Learning | All Rights Reversed</p>
+</footer>
+<!-- footer end -->
+
+<!-- For dropdown JS start-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bxslider/dist/jquery.bxslider.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Toggle dropdown when clicking on the dropdown icon
+    $('.dropdown_icon').click(function(){
+      $('.dropdown-content').toggle();
+    });
+
+    // Close dropdown when clicking outside of it
+    $(document).click(function(event) {
+      var $target = $(event.target);
+      if (!$target.closest('.dropdown').length) {
+        $('.dropdown-content').hide();
+      }
+    });
+  });
+</script>
+<!-- For dropdown JS end-->
+
+<!-- <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}</script>
+<script src="app.js"></script> -->
+
+<!-- instructor js link  start-->
+<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!-- instructor js link  start-->
+<!-- essential topics start -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/timeline.js"></script>
+<!-- essential topics end  -->
+</body>
+</html>

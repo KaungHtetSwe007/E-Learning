@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/usercontactus.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <link rel="stylesheet" href="css/stylecontact.css"> -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!-- search link  start-->
+  <!-- instructor start -->
+  
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<script src="js/home.js"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<link rel="stylesheet" href="css/usercontactus.css" />
+<!-- popular courses css link -->
+<style type="text/css">
+  .logo img{
+    width: 100px;
+    height: 110px;
+    margin-left: -5px;
+    margin-top: 10px;
+    border-radius:0 0 50px 50px;
+  }
+  .hideOnMobile{
+  margin: 1rem 4rem;
+  padding: 1rem 0rem;
+  font-size: 17px;
+  padding-top: 33px;
+  margin-left: 20px;
+ 
+}
+</style>
+  </head>
+  <body>
+
+   
+  <header>
+<nav>
+  <div class="logo"><img src="img/6.png"></div>
+  <div class="toggle_menu" id="toggle_menu">
+    <i class='bx bx-menu'></i>
+  </div>
+  <ul class="nav_list" id="nav_menu">
+    <div class="close_menu" id="close_menu"><i class='bx bx-x'></i></div>
+     <!-- dropdown start -->
+    <li class="hideOnMobile dropdown"><a href="#" class="nav_link dropdown_link" id="cos">Courses<i class='bx bxs-chevron-down dropdown_icon'></i></a>
+      <div class="dropdown-content">
+    <a href="phpcourse.php">PHP</a>
+    <a href="javascript.php">JavaScript</a>
+    <a href="htmlcss.php">HTML & CSS</a>
+    <a href="#">Logic</a>
+    <a href="#">C++</a>
+    <a href="#">Python</a>
+    <a href="#">C#</a>
+    <a href="#">Note.JS</a>
+  </div>
+
+    </li>
+    <!-- dropdown end -->
+    
+    <li class="hideOnMobile"  style=" margin-left:270px;"><a href="home.php" class="nav_link">Home</a></li>
+
+    <li class="hideOnMobile"><a href="usercontact.php" class="nav_link">Contact Us</a></li>
+    <li class="hideOnMobile"><a href="aboutus.php" class="nav_link">About Us</a></li>
+    <li class="hideOnMobile"> <a href="commentmain.php"class="nav_link">Reviews</a></li>
+   
+  <li class="hideOnMobile"></li>
+
+  </ul>
+  <ul>
+</nav>
+</header>
+
+
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Contact us</h3>
+          <p class="text">
+            MCY for everyone<br> Let's study</p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/locationR.png" class="icon" alt="" />
+              <p>Pathein</p>
+            </div>
+            <div class="information">
+              <img src="img/emailR.png" class="icon" alt="" />
+              <p>mcy2024@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phoneR.png" class="icon" alt="" />
+              <p>09-663108986</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Let's contact us:</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+         <form action="contactinsert.php" method="post">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="fname" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email Address</label>
+              <span>Email Address</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phno" class="input" />
+              <label for="">Phno</label>
+              <span>Phno</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" name="submit" style="width: 100px;" />
+          </form>
+          
+        </div>
+      </div>
+    </div>
+    <script src="js/usercontactus.js"></script>
+  </body>
+</html>
